@@ -14,7 +14,7 @@ class Blog extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('/posts')
             .then(response => {
                 // displays only the 1st 4 posts
                 const posts = response.data.slice(0, 4);
